@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    color: bisque;
+}
+
+section{
+    position:relative;
+    width: 100%;
+    min-height: 100vh;
+    padding:100px;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    display: flex;
+
+}
+header{
+    position:absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+    max-width: 80px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    position: relative;
+}
+header ul li a:hover::after{
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+}
+
+.container{
+    position:relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.container .textbox{
+    position:relative;
+    max-width: 600px;
+}
+
+.container .textbox h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.container .textbox h2 span{
+color: #017143;
+font-size: 1.2em;
+font-weight: 900;
+}
+
+.container .textbox p{
+    color: #333;
+}
+.container .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+}
+
+
+.container .imgbox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.container .imgbox img{
+    max-width: 340px;
+}
+
+.click{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    display: flex;
+    transform: translateX(-50%);
+
+}
+
+.click li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.click li:hover{
+    transform:translateY(-15px)
+}
+
+.click li img{
+    max-width: 60px;
+
+}
+
+.sideBar{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sideBar li{
+    list-style: none;
+}
+.sideBar li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}

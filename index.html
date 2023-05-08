@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo" ><img src="img/logo.png" alt="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="container">
+            <div class="textbox">
+                <h2>Its's not just coffee <br>Its <span>Starbucks</span></h2>
+                <p>Welcome to Starbucks, where we're passionate about coffee, community, and sustainability. Enjoy handcrafted drinks and snacks in a warm, inviting atmosphere while making a positive impact on the world.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgbox">
+                <img src="img/img1.png" alt="" class="starbucks">
+            </div>
+            
+        </div>
+        <ul class="click">
+            <li><img src="img/thumb1.png" alt="" onclick="imageslider('img/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="img/thumb3.png" alt="" onclick="imageslider('img/img3.png');changeCircleColor('#251a10')"></li>
+            <li><img src="img/thumb2.png" alt="" onclick="imageslider('img/img2.png');changeCircleColor('#eb7495')"></li>
+        </ul>
+        <ul class="sideBar">
+            <li><a href="https://www.facebook.com/Starbucks/"><img src="img/facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/starbucks/?hl=en"><img src="img/instagram.png" alt=""></a></li>
+            <li><a href="https://twitter.com/Starbucks?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="img/twitter.png" alt=""></a></li>
+        </ul>
+        
+    </section>
+
+    <script>
+        const imageslider=(curImg)=>{
+            document.querySelector('.starbucks').src=curImg;
+        }
+        const changeCircleColor=(curColor)=>{
+            document.querySelector('.circle').style.background=curColor;
+        }
+    </script>
+    
+</body>
+</html>
